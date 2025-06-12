@@ -1,6 +1,6 @@
 # Examen Aldrick EMiliano Chavarría Ibarra
 
-## EL propósito de este examen es convertir distintos tipos de monedas a otro
+## El propósito de este examen es convertir distintos tipos de monedas a otro
 
 ## Tecnologías usadas: HTML y JS
 
