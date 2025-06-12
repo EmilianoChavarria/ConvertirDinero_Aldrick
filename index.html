@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <h1 class="text-3xl">Conversion de Monedas</h1>
+    <div class="flex gap-x-4">
+        <div class="flex flex-col gap-y-4">
+            <p>
+                <span>Pesos mexicanos a dolares</span>
+                <input class="border border-black" type="number" placeholder="Pesos mexicanos" id="pesosM">->
+                <button class="bg-blue-500 text-white py-1 px-4" onclick="calcularPesosADolares()">Calcular</button>
+            </p>
+            <p>
+
+                <span>Pesos mexicanos a euros</span>
+                <input class="border border-black" type="text" placeholder="Pesos mexicanos" id="pesosM1">->
+                <button class="bg-blue-500 text-white py-1 px-4" onclick="calcularPesosAEuros()">Calcular</button>
+            </p>
+            <p>
+
+                <span>Dolares a pesos mexicanos</span>
+                <input class="border border-black" type="text" placeholder="Pesos mexicanos" id="dolares">->
+                <button class="bg-blue-500 text-white py-1 px-4" onclick="calcularDolaresAPesos()">Calcular</button>
+            </p>
+            <p>
+
+                <span>Euros a pesos mexicanos</span>
+                <input class="border border-black" type="text" placeholder="Pesos mexicanos" id="euros">->
+                <button class="bg-blue-500 text-white py-1 px-4" onclick="calcularEurosAPesos()">Calcular</button>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    const pesos1 = document.getElementById("pesosM")
+    const pesos2 = document.getElementById("pesosM1")
+    const dolares = document.getElementById("dolares")
+    const euros = document.getElementById("euros")
+
+    const calcularPesosADolares = () => {
+        const numero = parseInt(pesos1.value)
+        const calculo = numero / 17.5
+        alert(`${numero} pesos a dolares es ${calculo}`)
+
+    }
+
+    const calcularPesosAEuros = () => {
+        const numero = parseInt(pesos2.value)
+        const calculo = numero / 19.2
+        alert(`${numero} pesos a euros es ${calculo}`)
+
+    }
+    const calcularDolaresAPesos = () => {
+        const numero = parseInt(dolares.value)
+        const calculo = numero * 17.5
+        alert(`${numero} dolares a pesos es ${calculo}`)
+
+    }
+    const calcularEurosAPesos = () => {
+        const numero = parseInt(euros.value)
+        const calculo = numero * 19.2
+        alert(`${numero} euros a pesos es ${calculo}`)
+
+    }
+
+</script>
+
+</html>
